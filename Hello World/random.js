@@ -7,9 +7,9 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
-let random = Math.floor(Math.random() * 100) +1
+let random = Math.floor(Math.random() * 10000) +1
 
-let tries = 5
+let tries = 10
 
 console.log("spela då din feta fkn griiiiiiiiiiiiiiis");
 
