@@ -1,7 +1,7 @@
 // 1. Välkomna spelaren till spelet 
 // 2. Ge användaren instruktioner om hur spelet går till
-// 3. Slumpa ut ett ord till användaren av x antal möjliga
-// 4. Användaren ska gissa bokstav
+// 3. Slumpa ut ett ord till användaren av x antal möjliga med hjälp av en array med ord och random.item, jag kommer även använda math.random som jag använde i guess the number uppgiften
+// 4. Användaren ska gissa bokstav med hjälp av vilkor som if, else if och while
 //     4a. Användaren har 9 försök på sig
 //     4b. Gissar användaren rätt gissa nästa bokstav
 //     4c. Gissar användaren fel förlora ett "liv"
@@ -14,7 +14,17 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
-let random = 
+var myArray = [
+    "Prison",
+    "Banana",
+    "Tower",
+    "House",
+    "Computer"
+  ];
+  
+  var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+  
+  document.body.innerHTML = randomItem;
 
 let tries = 9
 
