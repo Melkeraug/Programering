@@ -5,16 +5,14 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const wordlist = ["hej", "snus", "fotboll"];
+const wordlist = ["porsche", "snus", "fotboll", "discord"];
 
 var randomWord = wordlist[Math.floor(Math.random() * wordlist.length)];
-
-console.log(randomWord);
 
 const progress = []
 
 for (let i = 0; i < randomWord.length; i++) {
-    progress.push("*");
+    progress.push("_");
 }
 
 var tries = 8
